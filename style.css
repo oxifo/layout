@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    user-select:none;
+}
+layout{
+    display:block;
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    box-sizing:border-box;
+}
+toolsbar{
+    width:100%;
+    height:45px;
+    position:relative;
+    top:0px;
+    box-shadow:0px 0px 6px #686868;
+    border-left:4px solid #353535;
+    display:grid;
+    grid-template-columns:20% 60% 20%;
+    box-sizing:border-box;
+}
+content{
+    width:100%;
+    height:100%;
+    border-left:4px solid #353535;
+    display:block;
+    position:relative;
+    top:0px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+menu{
+    display:block;
+    width:40px;
+    height:40px;
+    margin:2px auto;
+    box-shadow:0px 0px 4px #A5A5A5;
+    border-radius:4px;
+}
+IconSearch{
+    display:block;
+    width:25px;
+    height:25px;
+    border:1.5px solid #A5A5A5;
+    position:relative;
+    border-radius:30px;
+    transform:rotate(-25deg);
+    box-shadow:0px 0px 7px inset #222222;
+}
+IconSearch::before{
+    content:"";
+    width:2px;
+    height:20px;
+    background:#A5A5A5;
+    position:absolute;
+    bottom:-20px;
+    left:18px;
+    transform:rotate(-16deg);
+}
+#right{
+    position:absolute;
+    right:100px;
+    top:2px;
+}
+Download{
+    width:4px;
+    height:15px;
+    background:#A5A5A5;
+    border-radius:2px;
+}
+Download::before{
+    content:"";
+    width:0px;
+    height:0px;
+    border-style:solid;
+    border-color:#A5A5A5 transparent transparent transparent;
+    border-width:8px;
+    position:absolute;
+    top:14px;
+    left:-5.4655px;
+}
+Download::after{
+    content:"";
+    width:18px;
+    height:4px;
+    background:#A5A5A5;
+    position:absolute;
+    top:23px;
+    left:-6px;
+}
+#dl{
+    position:absolute;
+    right:40px;
+    top:10px;
+}
+TopTen{
+    display:block;
+    width:95%;
+    height:300px;
+    box-shadow:0px 0px 6px #7C7C7C;
+    border-radius:5px;
+    margin:7px auto;
+    overflow:scroll;
+}
+items{
+    display:block;
+    width:85%;
+    height:4px;
+    box-shadow:0px 0px 3px #A5A5A5;
+    border-radius:1px;
+    margin:10px auto;
+    background:#A5A5A5;
+    position:relative;
+}
+items::before{
+    content: "";
+    width:85%;
+    height:4px;
+    box-shadow:0px 0px 3px #A5A5A5;
+    border-radius:1px;
+    background:#A5A5A5;
+    position:absolute;
+    top:8px;
+}
+items::after{
+    content: "";
+    width:85%;
+    height:4px;
+    box-shadow:0px 0px 3px #A5A5A5;
+    border-radius:1px;
+    background:#A5A5A5;
+    position:absolute;
+    top:16px;
+}
+list{
+    width:fit-content;
+    height:295px;
+    display:grid;
+    grid-template-columns:340px 340px 340px 340px 340px 340px 340px 340px 340px 340px;
+    gap:10px;
+    box-sizing:border-box;
+    padding:0px 10px;
+}
+plain{
+    width:100%;
+    height:90%;
+    background:#797979;
+    margin:10px auto;
+    display:block;
+}
+Technology,History,Poem,Geology,Electronic,Cartoon{
+    width:100%;
+    height:550px;
+    background:#898989;
+    display:block;
+    margin:10px 1px 0px 4px;
+    overflow:scroll;
+    position:relative;
+}
+FrameLayout{
+    width:fit-content;
+    height:100%;
+    display:grid;
+    grid-template-columns:200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows:250px 250px;
+    gap:5px;
+    box-sizing:border-box;
+    padding:0px 5px;
+    padding-right:15px;
+    overflow:scroll;
+}
+Categories{
+    width:100%;
+    height:fit-content;
+    overflow:scroll;
+    display:block;
+}
+Function{
+    width:90%;
+    height:45px;
+    box-shadow:1px 1px 6px #3B3B3B;
+    border-radius:4px;
+    position:absolute;
+    background:white;
+    bottom:5px;
+    left:3.6%;
+    display:grid;
+    grid-template-columns:55% 45%;
+    column-gap:10px;
+    overflow:hidden;
+}
+type{
+    padding:8px 10px;
+    color:black;
+    font-size:23px;
+    font-family: Arial,"Comic Sans MS";
+    display:block;
+    border-right:2px solid black;
+}
+load{
+    display:block;
+    padding:12px 5px;
+    color:black;
+    position:relative;
+    left:30px;
+    padding-left:50px;
+    transition-duration:0.4s;
+}
+load:active{
+    background:#E3FFC7;
+}
+load::after{
+    content:"";
+    height:13px;
+    width:13px;
+    border-style:solid;
+    border-color:black black transparent transparent;
+    border-width:1px;
+    position:absolute;
+    transform:rotate(40deg);
+    top:15px;
+}
+footer{
+    width:90%;
+    height:200px;
+    background:white;
+    display:block;
+    margin:20px auto;
+    border-radius:5px 5px 0px 0px;
+    box-shadow:0px 0px 4px #A5A5A5;
+}
+table{
+    display:block;
+    margin:10px auto;
+}
+tr td:first-child{
+    padding:5px 20px;
+}
+tr td:last-child{
+    padding:5px 5px;
+}
