@@ -10,7 +10,7 @@
 <body>
     <layout>
         <toolsbar>
-            <menu>
+            <menu onclick="inout()">
                 <items></item>
             </menu>
             <IconSearch id="right"></IconSearch>
@@ -19,9 +19,7 @@
         <content>
             <TopTen>
               <list>
-                  <plain>
-                      <embed id="data"src="/storage/emulated/0/Pictures/facebook/1663186673405.jpg"/>
-                  </plain>
+                  <plain></plain>
                   <plain></plain>
                   <plain></plain>
                   <plain></plain>
@@ -367,6 +365,18 @@
             </footer>
         </content>
     </layout>
+    <nav>
+    </nav>
+    <Form id="form">
+        <Text>E-BOOK LIBRARY</Texte>
+        
+        <input type="text"id="name"placeholder="User Name"/>
+        <input type="text"id="email"placeholder="e-mail address"id="email"/>
+        <input type="number"placeholder="Your BirthDay"id="BirthDay"/>
+        <button id="save">Save As Data</button>
+        <term id="term">Term and Policy of
+            <a href="https://www.oxifo.com">oxifo</a></term>
+    </Form>
     <script src="data.js"></script>
     <script src="app.js"></script>
     <script src="logic.js"></script>

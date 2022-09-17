@@ -11,9 +11,11 @@ layout{
     overflow-y:scroll;
     overflow-x:hidden;
     box-sizing:border-box;
+    background:white;
+    padding-right:8px;
 }
 toolsbar{
-    width:100%;
+    width:105%;
     height:45px;
     position:relative;
     top:0px;
@@ -22,6 +24,7 @@ toolsbar{
     display:grid;
     grid-template-columns:20% 60% 20%;
     box-sizing:border-box;
+    left:0px;
 }
 content{
     width:100%;
@@ -242,4 +245,80 @@ tr td:first-child{
 }
 tr td:last-child{
     padding:5px 5px;
+}
+nav{
+    width:80%;
+    height:100%;
+    background:#D3D3D3;
+    position:fixed;
+    top:0;
+    left:-90%;
+    transition-duration:0.7s;
+    box-shadow:0px 0px 10px #1D1D1D;
+}
+Form{
+    position:absolute;
+    top:15%;
+    left:5%;
+    width:90%;
+    height:60%;
+    background:white;
+    border-radius:10px;
+    box-shadow:0px 0px 8px #353535;
+    padding-top:20px;
+    box-sizing:border-box;
+    overflow:hidden;
+}Text{
+    color:#39852B;
+    font-size:25px;
+    font-weight:600;
+    padding-left:25px;
+    padding-top:35px;
+}
+#name{
+    width:90%;
+    height:40px;
+    border-radius:4px;
+    outline:none;
+    box-shadow:0px 0px 9px #9E9E9E;
+    border:0px solid white;
+    margin:20px auto;
+    display:block;
+    box-sizing:border-box;
+    padding-left:10px;
+    font-size:23px;
+}
+#email,#BirthDay{
+    width:90%;
+    height:40px;
+    border-radius:4px;
+    outline:none;
+    box-shadow:0px 0px 9px #9E9E9E;
+    border:none;
+    margin:20px auto;
+    display:block;
+    box-sizing:border-box;
+    padding-left:10px;
+    font-size:23px;
+}
+#save{
+    width:220px;
+    height:44px;
+    border-radius:4px;
+    border:1px solid #1D6839;
+    outline:none;
+    font-size:23px;
+    display:block;
+    margin:auto;
+}
+term{
+    margin-top:30px;
+    font-size:18px;
+    text-align:center;
+    display:block;
+    font-weight:400;
+}
+#txt{
+    position:absolute;
+    right:10px;
 }
